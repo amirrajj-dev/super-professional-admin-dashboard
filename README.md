@@ -1,27 +1,27 @@
-# React-Super-Professional-persian-Admin-Dashboard
+# 🏢 React-Super-Professional-Persian-Admin-Dashboard
 
 A professional and feature-rich admin dashboard built with React, TypeScript, Tailwind CSS, and several other powerful libraries. This dashboard provides a seamless user experience with beautiful animations, responsive design, and a variety of functional components to manage your data efficiently.
 
-# Features
+![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB) ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white) ![Framer Motion](https://img.shields.io/badge/Framer%20Motion-ffffff?style=flat&logo=framer&logoColor=black) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)
 
-- Responsive Layout: Ensures optimal user experience on all devices.
-- Interactive Charts: Visualize data with Recharts.
-- Smooth Animations: Built using Framer Motion.
-- User Authentication: Secure access to the dashboard.
-- Data Management: View, add, edit, and delete data easily.
-- Settings Management: Comprehensive settings page to configure user preferences.
-- Dark Theme: Modern dark theme with Tailwind CSS.
+## ✨ Features
 
-  # Installation
+- 🌐 **Responsive Layout**: Ensures optimal user experience on all devices.
+- 📊 **Interactive Charts**: Visualize data with Recharts.
+- 🎨 **Smooth Animations**: Built using Framer Motion.
+- 🔐 **User Authentication**: Secure access to the dashboard.
+- 📋 **Data Management**: View, add, edit, and delete data easily.
+- ⚙️ **Settings Management**: Comprehensive settings page to configure user preferences.
+- 🌘 **Dark Theme**: Modern dark theme with Tailwind CSS.
 
-  To get started with the project, clone the repository and install the dependencies:
-  ```js
+## 📥 Installation
 
-  git clone https://github.com/amirrajj-dev/React-super-professional-admin-dashboard.git
-  cd react-super-professional-admin-dashboard
-  npm install
-
-  ```
+To get started with the project, clone the repository and install the dependencies:
+```bash
+git clone https://github.com/amirrajj-dev/React-super-professional-admin-dashboard.git
+cd react-super-professional-admin-dashboard
+npm install
+```
 
   # Usage
 
