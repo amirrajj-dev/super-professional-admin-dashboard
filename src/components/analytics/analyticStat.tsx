@@ -2,6 +2,15 @@ import { IconType } from "react-icons";
 import { motion } from "framer-motion";
 import { FaArrowTrendDown, FaArrowTrendUp } from "react-icons/fa6";
 
+
+const colorMap: Record<string, { bg: string; text: string }> = {
+  primary: { bg: "bg-primary", text: "text-primary-content" },
+  secondary: { bg: "bg-secondary", text: "text-secondary-content" },
+  emerald: { bg: "bg-emerald-500", text: "text-emerald-50" },
+  success: { bg: "bg-success", text: "text-success-content" },
+  error: { bg: "bg-error", text: "text-error-content" },
+};
+
 interface StatInterface {
   icon: IconType;
   title: string;
@@ -20,6 +29,8 @@ const AnalyticStat = ({
   growthAmount,
 }: StatInterface) => {
 
+  const color = colorMap[iconColor] || { bg: "bg-gray-500", text: "text-gray-50" };
+
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.8 }}
@@ -33,8 +44,8 @@ const AnalyticStat = ({
           <span className="font-semibold">{title}</span>
           <span className="text-2xl font-bold">{amount}</span>
         </div>
-        <div className={`w-14 h-14 p-3 rounded-full bg-${iconColor} flex items-center justify-center`}>
-          <Icon className={`text-${iconColor}-content w-8 h-8`} />
+        <div className={`${color.bg} w-14 h-14 p-3 rounded-full flex items-center justify-center`}>
+          <Icon className={`${color.text} w-8 h-8`} />
         </div>
       </div>
       <h3 className="text-base-content text-sm font-medium mt-2">

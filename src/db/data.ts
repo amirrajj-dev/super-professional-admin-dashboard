@@ -465,7 +465,7 @@ export const analyticsData = [
     icon: FaUser,
     isGrowing: false,
     growthAmount: "2%",
-    color: "primary",
+    color: "success",
   },
   {
     id: 3,
@@ -474,7 +474,7 @@ export const analyticsData = [
     icon: FaClipboardList,
     isGrowing: true,
     growthAmount: "8%",
-    color: "primary",
+    color: "secondary",
   },
   {
     id: 4,
@@ -483,7 +483,7 @@ export const analyticsData = [
     icon: FaChartLine,
     isGrowing: true,
     growthAmount: "10%",
-    color: "primary",
+    color: "",
   },
 ];
 
