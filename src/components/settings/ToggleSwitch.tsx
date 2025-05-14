@@ -21,7 +21,7 @@ const ToggleSwitch: React.FC<ToggleSwitchProps> = ({ label, initialChecked = fal
       <span className="text-white font-dana-demi">{label}</span>
       <div
         className={`relative w-12 h-6 rounded-full transition-colors duration-300 ${
-          isChecked ? 'bg-indigo-600' : 'bg-gray-400'
+          isChecked ? 'bg-primary' : 'bg-gray-400'
         }`}
         onClick={handleToggle}
       >

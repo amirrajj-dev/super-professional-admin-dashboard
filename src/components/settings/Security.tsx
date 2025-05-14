@@ -8,7 +8,7 @@ const Security = () => {
             <h4 className='font-dana-medium text-gray-400'>احراز هویت دو مرحله ای</h4>
             <ToggleSwitch label='' />
         </div>
-        <button className="bg-indigo-600 hover:bg-indigo-700 mt-6 rounded transition duration-200 text-white font-dana-medium py-2 px-4">
+        <button className="btn btn-primary mt-6 rounded transition duration-200 text-white font-dana-medium py-2 px-4">
         تغیر رمز عبور
       </button>
     </SettingsCardContainer>

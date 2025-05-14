@@ -3,6 +3,7 @@ import SettingsCardContainer from "../common/SettingsCardContainer";
 import { FaPlus } from "react-icons/fa";
 import { connectedAccountsData } from "../../db/data";
 import { useState } from "react";
+
 const ConnectedAccounts = () => {
   const [items, setItems] = useState(connectedAccountsData);
 
@@ -25,21 +26,20 @@ const ConnectedAccounts = () => {
         {items.map((item) => (
           <div key={item.id} className="flex items-center justify-between">
             <item.icon
-              className={`text-2xl ${item.id === 3 && "text-blue-500"}`}
+              className={`text-2xl ${item.id === 3 ? "text-blue-500" : "text-gray-500"}`}
             />
             <button
               onClick={() => hanleConnectDisconnect(item.id)}
-              className={`px-4 py-1 flex items-center justify-center rounded shadow border bg-${
-                item.status === "connected" ? "emerald" : "gray"
-              }-500 transition duration-200 hover:bg-emerald-600 border-gray-300 text-white`}
+              className={`btn ${item.status === "connected" ? "btn-success" : ""} w-32`}
             >
               {item.status === "connected" ? "متصل شده" : "اتصال"}
             </button>
           </div>
         ))}
       </div>
-      <div className="flex mt-6 gap-3 text-gray-500 ">
-        <FaPlus />
+
+      <div className="flex mt-6 gap-3 items-center text-gray-500">
+        <FaPlus className="text-xl" />
         <span>اضافه کردن اکانت</span>
       </div>
     </SettingsCardContainer>
