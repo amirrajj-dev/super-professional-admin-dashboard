@@ -68,7 +68,7 @@ const CategoryChart = () => {
           fill="#8884d8"
           dataKey="value"
         >
-          {categoryChartData.map((entry, index) => (
+          {categoryChartData.map((_, index) => (
             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
           ))}
         </Pie>

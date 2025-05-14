@@ -1,4 +1,3 @@
-import React from 'react'
 import SettingsCardContainer from '../common/SettingsCardContainer'
 import { IoIosNotificationsOutline } from "react-icons/io";
 import ToggleSwitch from './ToggleSwitch';

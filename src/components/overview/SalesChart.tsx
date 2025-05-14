@@ -29,7 +29,7 @@ const SalesChart = () => {
           itemStyle={{ color: '#e5e7eb' }}
         />
         <Bar dataKey="value" barSize={200}>
-          {data.map((entry, index) => (
+          {data.map((_, index) => (
             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
           ))}
         </Bar>
