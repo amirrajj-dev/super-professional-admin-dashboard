@@ -8,7 +8,13 @@ import {
 } from "recharts";
 import { categoryChartData } from "../../db/data";
 
-const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "#A28CFF"];
+const COLORS = [
+  "#3b82f6", // primary
+  "#10b981", // success
+  "#facc15", // warning
+  "#f97316", // secondary
+  "#a855f7", // accent
+];
 
 interface renderCustomizedLabelInterface {
   cx: number;
@@ -22,6 +28,7 @@ interface renderCustomizedLabelInterface {
 
 const CategoryChart = () => {
   const RADIAN = Math.PI / 180;
+
   const renderCustomizedLabel = ({
     cx,
     cy,
@@ -30,7 +37,7 @@ const CategoryChart = () => {
     percent,
     index,
   }: renderCustomizedLabelInterface) => {
-    const radius = outerRadius + 60; // Increase space
+    const radius = outerRadius + 60;
     const x = cx + radius * Math.cos(-midAngle * RADIAN);
     const y = cy + radius * Math.sin(-midAngle * RADIAN);
 
@@ -68,8 +75,8 @@ const CategoryChart = () => {
         <Tooltip
           contentStyle={{
             backgroundColor: "#1f2937",
-            borderColor: "#71767c",
-            color: "#fff",
+            borderColor: "#4b5563",  
+            color: "#f3f4f6",           
           }}
           itemStyle={{ color: "#e5e7eb" }}
         />

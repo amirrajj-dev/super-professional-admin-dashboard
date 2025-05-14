@@ -7,10 +7,16 @@ import SalesPage from "./pages/SalesPage";
 import UsersPage from "./pages/UsersPage";
 import AnalyticsPage from "./pages/AnalyticsPage";
 import SideBar from "./components/common/SideBar";
+import { useTheme } from "./store/useTheme";
+import { useEffect } from "react";
 
 const App = () => {
+  const {initializeTheme} = useTheme()
+  useEffect(()=>{
+    initializeTheme()
+  } , [initializeTheme])
   return (
-    <div className="h-screen bg-gray-900 overflow-hidden flex flex-row">
+    <div className="h-screen transition-colors overflow-hidden flex flex-row font-dana-regular">
       <SideBar />
       <div className="flex-1 overflow-auto">
         <Routes>

@@ -36,32 +36,31 @@ const OverviewPage = () => {
             />
           ))}
         </motion.div>
+
         <div className="flex flex-col lg:flex-row items-center gap-4">
           <motion.div
             initial={{ opacity: 0, y: 200 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="w-full lg:flex-1 h-[450px] bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 backdrop-blur-sm rounded-lg"
+            className="w-full lg:flex-1 h-[450px] bg-base-300 text-base-content rounded-lg"
           >
-            <h2 className="text-white font-dana-demi text-2xl m-4">
-              میزان فروش
-            </h2>
+            <h2 className="font-dana-demi text-2xl m-4">میزان فروش</h2>
             <SaleChart />
           </motion.div>
+
           <motion.div
             initial={{ opacity: 0, y: 200 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="w-full lg:flex-1 h-[450px] bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 backdrop-blur-sm rounded-lg"
+            className="w-full lg:flex-1 h-[450px] bg-base-300 text-base-content rounded-lg"
           >
-            <h2 className="text-white font-dana-demi text-2xl m-4">
-              توزیع دسته بندی
-            </h2>
+            <h2 className="font-dana-demi text-2xl m-4">توزیع دسته بندی</h2>
             <CategoryChart />
           </motion.div>
         </div>
-        <div className="mt-8 sm:mt-16 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 backdrop-blur-sm rounded-lg p-4">
-          <h2 className="text-white font-dana-demi text-2xl m-4">فروش کانال</h2>
+
+        <div className="mt-8 sm:mt-16 bg-base-300 text-base-content rounded-lg p-4">
+          <h2 className="font-dana-demi text-2xl m-4">فروش کانال</h2>
           <SalesChart />
         </div>
       </div>

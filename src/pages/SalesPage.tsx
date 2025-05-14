@@ -5,6 +5,7 @@ import Stat from "../components/common/Stat";
 import SalesOverviewChart from "../components/sales/SalesOverviewChart";
 import CategoryChart from "../components/common/CategoryChart";
 import SalesTrendChart from "../components/sales/SalesTrendChart";
+
 const SalesPage = () => {
   return (
     <div className="flex flex-col">
@@ -26,36 +27,35 @@ const SalesPage = () => {
             />
           ))}
         </motion.div>
+
         <motion.div
           initial={{ opacity: 0, y: 200 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
-          className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 backdrop-blur-sm rounded-lg p-6 my-8"
+          className="bg-base-300 text-base-content rounded-lg p-6 my-8"
         >
-          <h2 className="text-white font-dana-demi text-2xl m-4">
-            نمای کلی فروش
-          </h2>
+          <h2 className="font-dana-demi text-2xl m-4">نمای کلی فروش</h2>
           <SalesOverviewChart />
         </motion.div>
+
         <div className="flex flex-col lg:flex-row items-center gap-4">
           <motion.div
             initial={{ opacity: 0, y: 200 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="w-full lg:flex-1 h-[450px] my-6 md:my-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 backdrop-blur-sm rounded-lg"
+            className="w-full lg:flex-1 h-[450px] my-6 md:my-0 bg-base-300 text-base-content rounded-lg"
           >
-            <h2 className="text-white font-dana-demi text-2xl m-4">
-              افزایش کاربر
-            </h2>
+            <h2 className="font-dana-demi text-2xl m-4">افزایش کاربر</h2>
             <SalesTrendChart />
           </motion.div>
+
           <motion.div
             initial={{ opacity: 0, y: 200 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="w-full lg:flex-1 h-[450px] bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 backdrop-blur-sm rounded-lg"
+            className="w-full lg:flex-1 h-[450px] bg-base-300 text-base-content rounded-lg"
           >
-            <h2 className="text-white font-dana-demi text-2xl m-4">
+            <h2 className="font-dana-demi text-2xl m-4">
               فروش بر اساس دسته بندی
             </h2>
             <CategoryChart />

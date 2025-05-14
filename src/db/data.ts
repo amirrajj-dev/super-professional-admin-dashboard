@@ -17,36 +17,38 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 import { FaChartLine, FaPercentage, FaChartBar } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
+
 export const overviewStats = [
   {
     id: 1,
     title: "مجموع فروش",
     icon: BsLightningCharge,
     amount: "12,000,000",
-    color: "blue",
+    color: "text-primary",
   },
   {
     id: 2,
     title: "تعداد محصولات",
     icon: FiShoppingBag,
     amount: "1,234",
-    color: "purple",
+    color: "text-secondary",
   },
   {
     id: 3,
     title: "کاربران جدید",
     icon: FiUsers,
     amount: "537",
-    color: "red",
+    color: "text-error",
   },
   {
     id: 4,
     title: "نرخ تبدیل",
     icon: IoIosStats,
     amount: "20%",
-    color: "emerald",
+    color: "text-success",
   },
 ];
+
 
 export const ProductStats = [
   {
@@ -54,30 +56,31 @@ export const ProductStats = [
     title: "تعداد محصولات",
     icon: FaBox,
     amount: "1234",
-    color: "blue",
+    color: "text-primary", 
   },
   {
     id: 2,
     title: "پرفروش ترین",
     icon: FiShoppingBag,
     amount: "89",
-    color: "purple",
+    color: "text-accent", 
   },
   {
     id: 3,
     title: "میزان ضرر",
     icon: FaArrowTrendDown,
     amount: "63,237 $",
-    color: "red",
+    color: "text-error",
   },
   {
     id: 4,
     title: "کل درآمد",
     icon: LuDollarSign,
     amount: "535,000 $",
-    color: "emerald",
+    color: "text-success", 
   },
 ];
+
 
 export const categoryChartData = [
   { name: "دوره ها", value: 4500 },
@@ -143,28 +146,28 @@ export const userStats = [
     id: 1,
     title: "کل کاربران",
     icon: FaUsers,
-    iconColor: "blue",
+    iconColor: "text-primary",
     amount: "100,000",
   },
   {
     id: 2,
     title: "کاربران جدید",
     icon: FaUserPlus,
-    iconColor: "green",
+    iconColor: "text-success",
     amount: "500",
   },
   {
     id: 3,
     title: "کاربران فعال",
     icon: FaUserCheck,
-    iconColor: "yellow",
+    iconColor: "text-warning",
     amount: "75,500",
   },
   {
     id: 4,
     title: "کاربران از دست رفته",
     icon: FaUserClock,
-    iconColor: "red",
+    iconColor: "text-error",
     amount: "3,000",
   },
 ];
@@ -288,7 +291,7 @@ export const salesStats = [
     id: 1,
     title: "درآمد کل",
     icon: FaDollarSign,
-    iconColor: "green",
+    iconColor: "text-success",
     amount: "75,000,000",
   },
   {
@@ -296,20 +299,20 @@ export const salesStats = [
     title: "میانگین ارزش سفارش",
     icon: FaChartLine,
     amount: "200,000",
-    iconColor: "blue",
+    iconColor: "text-primary",
   },
   {
     id: 3,
     title: "نرخ تبدیل",
     icon: FaPercentage,
     amount: "40%",
-    iconColor: "yellow",
+    iconColor: "text-warning",
   },
   {
     id: 4,
     title: "رشد فروش",
     icon: FaChartBar,
-    iconColor: "purple",
+    iconColor: "text-secondary",
     amount: "7,000,000,00",
   },
 ];
@@ -350,28 +353,28 @@ export const ordersStats = [
     id: 1,
     title: "کل سفارشات",
     icon: FaClipboardList,
-    color: "blue",
+    color: "text-primary",
     amount: "20,450",
   },
   {
     id: 2,
     title: "سفارشات در انتظار",
     icon: FaClock,
-    color: "yellow",
+    color: "text-warning",
     amount: "2,500",
   },
   {
     id: 3,
     title: "سفارشات تکمیل شده",
     icon: FaCheckCircle,
-    color: "green",
+    color: "text-success",
     amount: "18,300",
   },
   {
     id: 4,
     title: "کل درآمد",
     icon: FaDollarSign,
-    color: "red",
+    color: "text-error",
     amount: "25,000,000",
   },
 ];
@@ -453,7 +456,7 @@ export const analyticsData = [
     icon: FaDollarSign,
     isGrowing: true,
     growthAmount: "5%",
-    color: "purple",
+    color: "primary",
   },
   {
     id: 2,
@@ -462,7 +465,7 @@ export const analyticsData = [
     icon: FaUser,
     isGrowing: false,
     growthAmount: "2%",
-    color: "blue",
+    color: "primary",
   },
   {
     id: 3,
@@ -471,7 +474,7 @@ export const analyticsData = [
     icon: FaClipboardList,
     isGrowing: true,
     growthAmount: "8%",
-    color: "red",
+    color: "primary",
   },
   {
     id: 4,
@@ -480,7 +483,7 @@ export const analyticsData = [
     icon: FaChartLine,
     isGrowing: true,
     growthAmount: "10%",
-    color: "emerald",
+    color: "primary",
   },
 ];
 

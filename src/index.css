@@ -1,11 +1,19 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "daisyui"{
+  themes: dark --prefersdark , forest , retro , emerald , night;
+}
+
+@theme {
+  --font-dana-regular: "dana-regular";
+  --font-dana-bold: "dana-bold";
+  --font-dana-demi: "dana-demi";
+  --font-dana-extra-bold: "dana-extra-bold";
+  --font-dana-extra-light: "dana-extra-light";
+  --font-dana-medium: "dana-medium";
+  --font-dana-light: "dana-light";
+}
 
 @layer base {
-  body {
-    @apply font-dana-regular;
-  }
 
   /* adding local fonts  */
   @font-face {
